@@ -15,7 +15,8 @@ import javax.swing.JOptionPane;
 public class ESFrmMain extends javax.swing.JFrame {
 
     EmmaStewartGUI manager;
-    ESWorkout workoutClass;
+    ESWorkout workoutDetails;
+    ESSet setDetails;
 
     public ESFrmMain(EmmaStewartGUI someWorkout) {
         initComponents();
@@ -209,13 +210,47 @@ public class ESFrmMain extends javax.swing.JFrame {
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         String clicked = lstWorkouts.getSelectedValue();
-        String id = manager.selectItem("Workout", "workoutID", "workoutName", clicked);
-        ESGuiTimer dlg = new ESGuiTimer(this, true);
-        dlg.setVisible(true);
+        String setID = manager.selectItem("Workout", "workoutID", "workoutName", clicked);
+        String sMins = manager.selectItem("Sets", "setTimeMins", "workoutID", setID);
+        String sSecs = manager.selectItem("Sets", "setTimeSecs", "workoutID", setID);
+
+        //Set the Workout Name Label to be what is saved in the database
+        String workoutName = manager.selectItem("Workout", "workoutName", "workoutID", setID);
+        
+        //Get the rest of the setDetails 
+        String numOrder = manager.selectItem("Sets", "numOrder", "workoutID", setID);
+        String numOfLaps = manager.selectItem("Sets", "numOfLaps", "workoutID", setID);
+        String setDis = manager.selectItem("Sets", "setDis", "workoutID", setID);
+        String strokeType = manager.selectItem("Sets", "strokeType", "workoutID", setID);
+        String setDescription = manager.selectItem("Sets", "setDescription", "workoutID", setID);
+
+        //Now take the stuff you just got from the database and set it to the values in your object
+        ESSet setDetails = new ESSet();
+        ESWorkout workoutDetails = new ESWorkout();
+        setDetails.setTimeMins = Integer.parseInt(sMins);
+        setDetails.setTimeSecs = Integer.parseInt(sSecs);
+        setDetails.setID = Integer.parseInt(setID);
+
+        workoutDetails.workoutName = workoutName;
+        setDetails.numOrder = Integer.parseInt(numOrder);
+        setDetails.numOfLaps = Integer.parseInt(numOfLaps);
+        setDetails.setDis = setDis;
+        setDetails.strokeType = strokeType;
+        setDetails.setDescription = setDescription;
+               
+        System.out.println("setID: " + setDetails.setID);
+        System.out.println("numOfLaps: " + setDetails.numOfLaps);
+        System.out.println("Instructions: " + (numOfLaps) + " x " + String.valueOf(setDis) + "m "
+                + strokeType + " on " + String.valueOf(sMins) + ":" + String.valueOf(sSecs));
+        System.out.println("Description: " + setDescription);
+
+        ESGuiRunWorkout dlg = new ESGuiRunWorkout(this, setDetails, true);
+        dlg.setVisible(true);        
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileActionPerformed
-
+        ESGuiPersonalInfo dlg = new ESGuiPersonalInfo(this, true);
+        dlg.setVisible(true);
     }//GEN-LAST:event_btnProfileActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
@@ -271,7 +306,7 @@ public class ESFrmMain extends javax.swing.JFrame {
                 String totalTime = rs.getString("totalTime");
                 ESWorkout workout = new ESWorkout();
                 //Instantiate a new workout       
-                workout.setWorkoutName(rs.getString("workoutName") /*+ "           TD: " + rs.getString("totalDis") + "  TT: " +  rs.getString("totalTime")*/);
+                workout.setWorkoutName(/*"TD: " + rs.getString("totalDis") + "  TT: " +  rs.getString("totalTime") + "          " + */rs.getString("workoutName"));
                 //Get the name of said workout
                 DLM.addElement(workout.getWorkoutName());
                 //Add it to the Default List Model 

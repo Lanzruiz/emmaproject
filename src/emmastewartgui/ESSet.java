@@ -9,7 +9,7 @@ package emmastewartgui;
  *
  * @author Emma
  */
-public class ESGuiSet {
+public class ESSet {
 
     int setID;
     int numOrder;
@@ -18,12 +18,13 @@ public class ESGuiSet {
     String setDis;
     boolean isPB;
     int addPB;
-    int setTime;
+    int setTimeMins;
+    int setTimeSecs;
+    String setDescription;
 
     public int getSetID() {
         return this.setID;
     }
-
     public void setSetID(int setID) {
         this.setID = setID;
     }
@@ -31,7 +32,6 @@ public class ESGuiSet {
     public int getNumOrder() {
         return this.setID;
     }
-
     public void setNumOrder(int numOrder) {
         this.numOrder = numOrder;
     }
@@ -39,7 +39,6 @@ public class ESGuiSet {
     public int getNumOfLaps() {
         return this.numOfLaps;
     }
-
     public void setNumOfLaps(int numOfLaps) {
         this.numOfLaps = numOfLaps;
     }
@@ -47,7 +46,6 @@ public class ESGuiSet {
     public String getStrokeType() {
         return this.strokeType;
     }
-
     public void setStrokeType(String strokeType) {
         this.strokeType = strokeType;
     }
@@ -55,7 +53,6 @@ public class ESGuiSet {
     public String getSetDis() {
         return this.setDis;
     }
-
     public void setSetDis(String setDis) {
         this.setDis = setDis;
     }
@@ -63,7 +60,6 @@ public class ESGuiSet {
     public boolean getIsPB() {
         return this.isPB;
     }
-
     public boolean setIsPB(boolean isPB) {
         return this.isPB = isPB;
     }
@@ -71,20 +67,31 @@ public class ESGuiSet {
     public int getAddPB() {
         return this.addPB;
     }
-
     public int setAddPB(int addPB) {
         return this.addPB = addPB;
     }
 
-    public int getSetTime() {
-        return this.setTime;
+    public int getSetTimeMins() {
+        return this.setTimeMins;
+    }
+    public int setSetTimeMins(int setTimeMins) {
+        return this.setTimeMins = setTimeMins;
+    }
+    
+     public int getSetTimeSecs() {
+        return this.setTimeSecs;
+    }
+    public int setSetTimeSecs(int setTimeSecs) {
+        return this.setTimeSecs = setTimeSecs;
+    }
+    
+    public String getSetDescription() {
+        return this.setDescription;
     }
 
-    public int setSetTime(int setTime) {
-        return this.setTime = setTime;
+    public String setSetDescription(String setDescription) {
+        return this.setDescription = setDescription;
     }
-
+    
     
 }
-
-
