@@ -2,6 +2,7 @@ package emmastewartgui;
 
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -47,9 +48,8 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
 
         // Then print the description:
         lblSetDescription.setText(setDetails.setDescription);
-        
-        
-/*      int numOfLaps = setDetails.numOfLaps;
+
+        /*      int numOfLaps = setDetails.numOfLaps;
         while (workoutID = workoutDetails.workoutID){
                 run();
             if (setDetails.setTimeMins == 0 && setDetails.setTimeSecs == 0){
@@ -63,7 +63,6 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
                 }
             }
         }   */
-     
     }
 
     int secondsPassed = 0;
@@ -134,7 +133,6 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
         lblInstructions = new javax.swing.JLabel();
         lblNameWorkout = new javax.swing.JLabel();
         btnPause = new javax.swing.JButton();
-        btnExitWorkout = new javax.swing.JButton();
         lblColon = new javax.swing.JLabel();
         lblSecsTime = new javax.swing.JLabel();
         lblMinsTime = new javax.swing.JLabel();
@@ -186,14 +184,6 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
             }
         });
 
-        btnExitWorkout.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnExitWorkout.setText("EXIT");
-        btnExitWorkout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitWorkoutActionPerformed(evt);
-            }
-        });
-
         lblColon.setFont(new java.awt.Font("Tahoma", 0, 450)); // NOI18N
         lblColon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblColon.setText(":");
@@ -213,17 +203,16 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGap(74, 74, 74)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnExitWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48)
+                        .addGap(186, 186, 186)
                         .addComponent(lblNameWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 904, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                        .addComponent(btnPause, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPause, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(lblMinsTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblColon)
@@ -235,11 +224,9 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnPause, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnExitWorkout, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
-                    .addComponent(lblNameWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblNameWorkout, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(btnPause, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(59, 59, 59)
@@ -259,15 +246,15 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPauseActionPerformed
-
+//        Object[] options = {"Continue", "Quit workout"};
+//        int n = JOptionPane.showOptionDialog(frame,//parent container of JOptionPane
+//                "Menu","Paused", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,
+//                null, //do not use a custom Icon
+//                options, //the titles of buttons
+//                options[2]); //default button title
     }//GEN-LAST:event_btnPauseActionPerformed
 
-    private void btnExitWorkoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitWorkoutActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_btnExitWorkoutActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnExitWorkout;
     private javax.swing.JButton btnPause;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblColon;

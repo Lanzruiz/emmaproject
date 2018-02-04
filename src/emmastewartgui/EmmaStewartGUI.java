@@ -89,6 +89,37 @@ public class EmmaStewartGUI {
             return null;
         }  
     }
+    
+   public String selectItem(String table, String column){
+        String sql = "SELECT " + column + " FROM " + table;
+        //System.out.println(sql);
+        try {
+            Connection c = this.connect();
+            Statement stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            
+            if(rs.next()){
+                if(rs.getString(column) != null){
+                    String s = rs.getString(column);
+                    c.close();
+                    return s;
+                }
+                else{
+                    c.close();
+                    return null;
+                }
+            }
+            else {
+                c.close();
+                return null;
+            }           
+        }
+        catch (SQLException e){
+            JOptionPane.showMessageDialog(null, e.toString());
+            return null;
+        }  
+    } 
+    
     public void deleteItem(String table, String filterColumn1, String filterColumn2, String name1, String name2){
     try {
             String sql = "DELETE FROM " + table + " WHERE " + filterColumn1 + " = ? AND " + filterColumn2 + " = ?";

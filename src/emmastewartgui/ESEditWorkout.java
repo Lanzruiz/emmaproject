@@ -86,7 +86,6 @@ public class ESEditWorkout extends javax.swing.JDialog {
 
         btnUpdate = new javax.swing.JButton();
         txtfldWorkoutName = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
         scrllWorkout = new javax.swing.JScrollPane();
         pnlWorkout = new javax.swing.JPanel();
@@ -221,16 +220,13 @@ public class ESEditWorkout extends javax.swing.JDialog {
             }
         });
 
-        txtfldWorkoutName.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtfldWorkoutName.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
         txtfldWorkoutName.setText("Name");
         txtfldWorkoutName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtfldWorkoutNameActionPerformed(evt);
             }
         });
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setText("DONE");
 
         btnCancel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnCancel.setText("CANCEL");
@@ -1140,27 +1136,24 @@ public class ESEditWorkout extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(scrllWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(scrllWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 1208, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(txtfldWorkoutName, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(175, 175, 175)
                         .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtfldWorkoutName, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtfldWorkoutName, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
+                    .addComponent(btnUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(scrllWorkout, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
@@ -1192,7 +1185,7 @@ public class ESEditWorkout extends javax.swing.JDialog {
             manager.connect().close();
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Updated");
+            JOptionPane.showMessageDialog(null, "Workout updated!");
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
@@ -1201,8 +1194,7 @@ public class ESEditWorkout extends javax.swing.JDialog {
     }//GEN-LAST:event_txtfldWorkoutNameActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        // TODO add your handling code here:
-
+        this.dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void txtfldDescription1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfldDescription1ActionPerformed
@@ -1287,7 +1279,6 @@ public class ESEditWorkout extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> cmbxTime7;
     private javax.swing.JComboBox<String> cmbxTime8;
     private javax.swing.JComboBox<String> cmbxTime9;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel lblBy10;
     private javax.swing.JLabel lblBy11;
     private javax.swing.JLabel lblBy12;

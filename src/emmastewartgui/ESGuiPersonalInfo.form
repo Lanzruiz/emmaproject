@@ -28,32 +28,28 @@
               <Component id="jScrollPane1" min="-2" pref="1077" max="-2" attributes="0"/>
               <EmptySpace pref="123" max="32767" attributes="0"/>
           </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btnSavePB" max="32767" attributes="0"/>
+                  <Component id="btnDonePB" pref="149" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblPersonalBests" alignment="0" min="-2" pref="318" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblPersonalBests" min="-2" pref="318" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="890" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="lblNamePB" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtfldName" min="-2" pref="861" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                  <Component id="lblNamePB" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtfldName" min="-2" pref="861" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="lblProfile" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="84" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnSavePB" alignment="1" max="32767" attributes="0"/>
-                              <Component id="btnDonePB" alignment="1" pref="126" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="lblProfile" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace pref="231" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -61,26 +57,24 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnSavePB" min="-2" pref="58" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnDonePB" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
               <Component id="jScrollPane1" pref="459" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblProfile" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
-                      <Component id="btnDonePB" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="lblProfile" min="-2" pref="75" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnSavePB" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="lblNamePB" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="txtfldName" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblNamePB" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="txtfldName" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Component id="lblPersonalBests" min="-2" pref="73" max="-2" attributes="0"/>
                   <EmptySpace pref="481" max="32767" attributes="0"/>
               </Group>
@@ -106,17 +100,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl100IM" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl100Free" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl100Breast" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl100Back" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl100Fly" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl50Free" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblNamePB4" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl50Back" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -124,87 +113,52 @@
                                       <Component id="lbl200Fly" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblNamePB10" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime11" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnBK200Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon14" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime11" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnBK200Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime10" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFL200Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon13" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime10" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFL200Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="spnMinTime1" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnFL50Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="lblColon4" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="spnSecTime1" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnFL50Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
-                                                  <Component id="spnMinTime2" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnBK50Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="lblColon5" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="spnSecTime2" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnBK50Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="spnMinTime3" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnBR50Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="lblColon6" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="spnSecTime3" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spnBR50Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="spnMinTime4" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Component id="spnFR50Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="lblColon7" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime4" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="spnMinTime5" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblColon8" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime5" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="spnMinTime6" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblColon9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime6" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="spnMinTime7" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblColon10" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime7" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="spnMinTime8" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblColon11" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime8" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="spnMinTime9" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblColon12" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="spnSecTime9" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Component id="spnFR50Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -217,18 +171,18 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime13" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR200Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon16" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime13" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR200Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime12" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnBR200Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon15" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime12" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnBR200Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -241,18 +195,18 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="spnMinTime15" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <Component id="spnFR400Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="lblColon18" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnSecTime15" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <Component id="spnFR400Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="spnMinTime14" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <Component id="spnIM200Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="lblColon17" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnSecTime14" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <Component id="spnIM200Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -260,11 +214,11 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lbl400IM" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="spnMinTime16" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="spnIM400Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="lblColon19" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="spnSecTime16" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="spnIM400Secs" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -274,19 +228,66 @@
                                   <EmptySpace min="132" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime18" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR1000Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon21" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime18" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR1000Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="spnMinTime17" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR800Mins" min="-2" pref="61" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblColon20" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnSecTime17" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="spnFR800Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbl100IM" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl100Free" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl100Breast" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl100Back" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl100Fly" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="spnFL100Mins" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblColon8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="spnFL100Secs" min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="spnBK100Mins" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblColon9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="spnBK100Secs" min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="spnBR100Mins" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblColon10" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="spnBR100Secs" min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="spnFR100Mins" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblColon11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="spnFR100Secs" min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="spnIM100Mins" min="-2" pref="61" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblColon12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="spIM100Secs" min="-2" pref="61" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -302,126 +303,126 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl50Fly" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL50Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL50Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl50Back" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK50Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK50Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblNamePB4" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime3" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime3" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR50Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR50Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl50Free" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime4" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime4" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR50Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR50Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl100Fly" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime5" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime5" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL100Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL100Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl100Back" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime6" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime6" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK100Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK100Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl100Breast" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime7" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime7" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR100Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR100Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl100Free" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime8" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime8" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR100Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR100Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl100IM" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime9" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime9" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnIM100Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spIM100Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace pref="43" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl200Fly" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon13" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime10" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime10" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL200Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFL200Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblNamePB10" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime11" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime11" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK200Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBK200Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl200Breast" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime12" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime12" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR200Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnBR200Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl200Free" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime13" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime13" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR200Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR200Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl200IM" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime14" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime14" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnIM200Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnIM200Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl400Free" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime15" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime15" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR400Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR400Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl400IM" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="lblColon19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime16" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime16" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnIM400Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnIM400Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl800Free" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblColon20" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime17" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime17" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR800Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR800Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblColon21" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spnMinTime18" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="spnSecTime18" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR1000Mins" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="spnFR1000Secs" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                           <Component id="lbl1000Free" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="35" max="32767" attributes="0"/>
@@ -582,7 +583,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime1">
+            <Component class="javax.swing.JSpinner" name="spnFL50Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -591,10 +592,12 @@
                   <SpinnerModel initial="0" maximum="60" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value="00"/>
-                <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime1">
+            <Component class="javax.swing.JSpinner" name="spnFL50Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -614,7 +617,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime2">
+            <Component class="javax.swing.JSpinner" name="spnBK50Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -626,7 +629,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime2">
+            <Component class="javax.swing.JSpinner" name="spnBK50Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -646,7 +649,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime3">
+            <Component class="javax.swing.JSpinner" name="spnBR50Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -658,7 +661,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime3">
+            <Component class="javax.swing.JSpinner" name="spnBR50Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -678,7 +681,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime4">
+            <Component class="javax.swing.JSpinner" name="spnFR50Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -690,7 +693,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime4">
+            <Component class="javax.swing.JSpinner" name="spnFR50Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -710,7 +713,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime5">
+            <Component class="javax.swing.JSpinner" name="spnFL100Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -722,7 +725,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime5">
+            <Component class="javax.swing.JSpinner" name="spnFL100Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -742,7 +745,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime6">
+            <Component class="javax.swing.JSpinner" name="spnBK100Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -754,7 +757,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime6">
+            <Component class="javax.swing.JSpinner" name="spnBK100Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -774,7 +777,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime7">
+            <Component class="javax.swing.JSpinner" name="spnBR100Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -786,7 +789,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime7">
+            <Component class="javax.swing.JSpinner" name="spnBR100Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -806,7 +809,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime8">
+            <Component class="javax.swing.JSpinner" name="spnFR100Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -818,7 +821,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime8">
+            <Component class="javax.swing.JSpinner" name="spnFR100Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -838,7 +841,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime9">
+            <Component class="javax.swing.JSpinner" name="spnIM100Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -850,7 +853,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime9">
+            <Component class="javax.swing.JSpinner" name="spIM100Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -870,7 +873,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime10">
+            <Component class="javax.swing.JSpinner" name="spnFL200Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -882,7 +885,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime10">
+            <Component class="javax.swing.JSpinner" name="spnFL200Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -902,7 +905,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime11">
+            <Component class="javax.swing.JSpinner" name="spnBK200Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -914,7 +917,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime11">
+            <Component class="javax.swing.JSpinner" name="spnBK200Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -934,7 +937,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime12">
+            <Component class="javax.swing.JSpinner" name="spnBR200Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -946,7 +949,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime12">
+            <Component class="javax.swing.JSpinner" name="spnBR200Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -966,7 +969,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime13">
+            <Component class="javax.swing.JSpinner" name="spnFR200Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -978,7 +981,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime13">
+            <Component class="javax.swing.JSpinner" name="spnFR200Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -998,7 +1001,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime14">
+            <Component class="javax.swing.JSpinner" name="spnIM200Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1010,7 +1013,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime14">
+            <Component class="javax.swing.JSpinner" name="spnIM200Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1030,7 +1033,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime15">
+            <Component class="javax.swing.JSpinner" name="spnFR400Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1042,7 +1045,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime15">
+            <Component class="javax.swing.JSpinner" name="spnFR400Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1062,7 +1065,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime16">
+            <Component class="javax.swing.JSpinner" name="spnIM400Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1074,7 +1077,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime16">
+            <Component class="javax.swing.JSpinner" name="spnIM400Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1094,7 +1097,7 @@
                 <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime17">
+            <Component class="javax.swing.JSpinner" name="spnFR800Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1106,7 +1109,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime17">
+            <Component class="javax.swing.JSpinner" name="spnFR800Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1118,7 +1121,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnMinTime18">
+            <Component class="javax.swing.JSpinner" name="spnFR1000Mins">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1130,7 +1133,7 @@
                 <Property name="requestFocusEnabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSpinner" name="spnSecTime18">
+            <Component class="javax.swing.JSpinner" name="spnFR1000Secs">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
@@ -1174,6 +1177,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="DONE"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDonePBActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblNamePB">
       <Properties>

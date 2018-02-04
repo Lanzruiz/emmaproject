@@ -17,6 +17,19 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
     public ESGuiPersonalInfo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        displayPersonalInfo();
+    }
+    
+    EmmaStewartGUI manager;
+    
+    public void displayPersonalInfo(){
+        String userName = manager.selectItem("PersonalInfo", "userName");
+        System.out.println("Username: " + userName);
+        txtfldName.setText(userName);
+        
+        
+        
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -45,58 +58,58 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
         lbl1000Free = new javax.swing.JLabel();
         lbl800Free = new javax.swing.JLabel();
         lblColon4 = new javax.swing.JLabel();
-        spnMinTime1 = new javax.swing.JSpinner();
-        spnSecTime1 = new javax.swing.JSpinner();
+        spnFL50Mins = new javax.swing.JSpinner();
+        spnFL50Secs = new javax.swing.JSpinner();
         lblColon5 = new javax.swing.JLabel();
-        spnMinTime2 = new javax.swing.JSpinner();
-        spnSecTime2 = new javax.swing.JSpinner();
+        spnBK50Mins = new javax.swing.JSpinner();
+        spnBK50Secs = new javax.swing.JSpinner();
         lblColon6 = new javax.swing.JLabel();
-        spnMinTime3 = new javax.swing.JSpinner();
-        spnSecTime3 = new javax.swing.JSpinner();
+        spnBR50Mins = new javax.swing.JSpinner();
+        spnBR50Secs = new javax.swing.JSpinner();
         lblColon7 = new javax.swing.JLabel();
-        spnMinTime4 = new javax.swing.JSpinner();
-        spnSecTime4 = new javax.swing.JSpinner();
+        spnFR50Mins = new javax.swing.JSpinner();
+        spnFR50Secs = new javax.swing.JSpinner();
         lblColon8 = new javax.swing.JLabel();
-        spnMinTime5 = new javax.swing.JSpinner();
-        spnSecTime5 = new javax.swing.JSpinner();
+        spnFL100Mins = new javax.swing.JSpinner();
+        spnFL100Secs = new javax.swing.JSpinner();
         lblColon9 = new javax.swing.JLabel();
-        spnMinTime6 = new javax.swing.JSpinner();
-        spnSecTime6 = new javax.swing.JSpinner();
+        spnBK100Mins = new javax.swing.JSpinner();
+        spnBK100Secs = new javax.swing.JSpinner();
         lblColon10 = new javax.swing.JLabel();
-        spnMinTime7 = new javax.swing.JSpinner();
-        spnSecTime7 = new javax.swing.JSpinner();
+        spnBR100Mins = new javax.swing.JSpinner();
+        spnBR100Secs = new javax.swing.JSpinner();
         lblColon11 = new javax.swing.JLabel();
-        spnMinTime8 = new javax.swing.JSpinner();
-        spnSecTime8 = new javax.swing.JSpinner();
+        spnFR100Mins = new javax.swing.JSpinner();
+        spnFR100Secs = new javax.swing.JSpinner();
         lblColon12 = new javax.swing.JLabel();
-        spnMinTime9 = new javax.swing.JSpinner();
-        spnSecTime9 = new javax.swing.JSpinner();
+        spnIM100Mins = new javax.swing.JSpinner();
+        spIM100Secs = new javax.swing.JSpinner();
         lblColon13 = new javax.swing.JLabel();
-        spnMinTime10 = new javax.swing.JSpinner();
-        spnSecTime10 = new javax.swing.JSpinner();
+        spnFL200Mins = new javax.swing.JSpinner();
+        spnFL200Secs = new javax.swing.JSpinner();
         lblColon14 = new javax.swing.JLabel();
-        spnMinTime11 = new javax.swing.JSpinner();
-        spnSecTime11 = new javax.swing.JSpinner();
+        spnBK200Mins = new javax.swing.JSpinner();
+        spnBK200Secs = new javax.swing.JSpinner();
         lblColon15 = new javax.swing.JLabel();
-        spnMinTime12 = new javax.swing.JSpinner();
-        spnSecTime12 = new javax.swing.JSpinner();
+        spnBR200Mins = new javax.swing.JSpinner();
+        spnBR200Secs = new javax.swing.JSpinner();
         lblColon16 = new javax.swing.JLabel();
-        spnMinTime13 = new javax.swing.JSpinner();
-        spnSecTime13 = new javax.swing.JSpinner();
+        spnFR200Mins = new javax.swing.JSpinner();
+        spnFR200Secs = new javax.swing.JSpinner();
         lblColon17 = new javax.swing.JLabel();
-        spnMinTime14 = new javax.swing.JSpinner();
-        spnSecTime14 = new javax.swing.JSpinner();
+        spnIM200Mins = new javax.swing.JSpinner();
+        spnIM200Secs = new javax.swing.JSpinner();
         lblColon18 = new javax.swing.JLabel();
-        spnSecTime15 = new javax.swing.JSpinner();
-        spnMinTime15 = new javax.swing.JSpinner();
+        spnFR400Secs = new javax.swing.JSpinner();
+        spnFR400Mins = new javax.swing.JSpinner();
         lblColon19 = new javax.swing.JLabel();
-        spnSecTime16 = new javax.swing.JSpinner();
-        spnMinTime16 = new javax.swing.JSpinner();
+        spnIM400Secs = new javax.swing.JSpinner();
+        spnIM400Mins = new javax.swing.JSpinner();
         lblColon20 = new javax.swing.JLabel();
-        spnSecTime17 = new javax.swing.JSpinner();
-        spnMinTime17 = new javax.swing.JSpinner();
-        spnMinTime18 = new javax.swing.JSpinner();
-        spnSecTime18 = new javax.swing.JSpinner();
+        spnFR800Secs = new javax.swing.JSpinner();
+        spnFR800Mins = new javax.swing.JSpinner();
+        spnFR1000Mins = new javax.swing.JSpinner();
+        spnFR1000Secs = new javax.swing.JSpinner();
         lblColon21 = new javax.swing.JLabel();
         btnSavePB = new javax.swing.JButton();
         lblProfile = new javax.swing.JLabel();
@@ -166,233 +179,232 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
         lblColon4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon4.setText(":");
 
-        spnMinTime1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime1.setToolTipText("00");
-        spnMinTime1.setRequestFocusEnabled(false);
+        spnFL50Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL50Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFL50Mins.setToolTipText("00");
 
-        spnSecTime1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime1.setToolTipText("00");
-        spnSecTime1.setRequestFocusEnabled(false);
+        spnFL50Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL50Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFL50Secs.setToolTipText("00");
+        spnFL50Secs.setRequestFocusEnabled(false);
 
         lblColon5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon5.setText(":");
 
-        spnMinTime2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime2.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime2.setToolTipText("00");
-        spnMinTime2.setRequestFocusEnabled(false);
+        spnBK50Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK50Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBK50Mins.setToolTipText("00");
+        spnBK50Mins.setRequestFocusEnabled(false);
 
-        spnSecTime2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime2.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime2.setToolTipText("00");
-        spnSecTime2.setRequestFocusEnabled(false);
+        spnBK50Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK50Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBK50Secs.setToolTipText("00");
+        spnBK50Secs.setRequestFocusEnabled(false);
 
         lblColon6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon6.setText(":");
 
-        spnMinTime3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime3.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime3.setToolTipText("00");
-        spnMinTime3.setRequestFocusEnabled(false);
+        spnBR50Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR50Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBR50Mins.setToolTipText("00");
+        spnBR50Mins.setRequestFocusEnabled(false);
 
-        spnSecTime3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime3.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime3.setToolTipText("00");
-        spnSecTime3.setRequestFocusEnabled(false);
+        spnBR50Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR50Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBR50Secs.setToolTipText("00");
+        spnBR50Secs.setRequestFocusEnabled(false);
 
         lblColon7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon7.setText(":");
 
-        spnMinTime4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime4.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime4.setToolTipText("00");
-        spnMinTime4.setRequestFocusEnabled(false);
+        spnFR50Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR50Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR50Mins.setToolTipText("00");
+        spnFR50Mins.setRequestFocusEnabled(false);
 
-        spnSecTime4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime4.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime4.setToolTipText("00");
-        spnSecTime4.setRequestFocusEnabled(false);
+        spnFR50Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR50Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR50Secs.setToolTipText("00");
+        spnFR50Secs.setRequestFocusEnabled(false);
 
         lblColon8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon8.setText(":");
 
-        spnMinTime5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime5.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime5.setToolTipText("00");
-        spnMinTime5.setRequestFocusEnabled(false);
+        spnFL100Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL100Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFL100Mins.setToolTipText("00");
+        spnFL100Mins.setRequestFocusEnabled(false);
 
-        spnSecTime5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime5.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime5.setToolTipText("00");
-        spnSecTime5.setRequestFocusEnabled(false);
+        spnFL100Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL100Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFL100Secs.setToolTipText("00");
+        spnFL100Secs.setRequestFocusEnabled(false);
 
         lblColon9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon9.setText(":");
 
-        spnMinTime6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime6.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime6.setToolTipText("00");
-        spnMinTime6.setRequestFocusEnabled(false);
+        spnBK100Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK100Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBK100Mins.setToolTipText("00");
+        spnBK100Mins.setRequestFocusEnabled(false);
 
-        spnSecTime6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime6.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime6.setToolTipText("00");
-        spnSecTime6.setRequestFocusEnabled(false);
+        spnBK100Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK100Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBK100Secs.setToolTipText("00");
+        spnBK100Secs.setRequestFocusEnabled(false);
 
         lblColon10.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon10.setText(":");
 
-        spnMinTime7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime7.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime7.setToolTipText("00");
-        spnMinTime7.setRequestFocusEnabled(false);
+        spnBR100Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR100Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBR100Mins.setToolTipText("00");
+        spnBR100Mins.setRequestFocusEnabled(false);
 
-        spnSecTime7.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime7.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime7.setToolTipText("00");
-        spnSecTime7.setRequestFocusEnabled(false);
+        spnBR100Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR100Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBR100Secs.setToolTipText("00");
+        spnBR100Secs.setRequestFocusEnabled(false);
 
         lblColon11.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon11.setText(":");
 
-        spnMinTime8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime8.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime8.setToolTipText("00");
-        spnMinTime8.setRequestFocusEnabled(false);
+        spnFR100Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR100Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR100Mins.setToolTipText("00");
+        spnFR100Mins.setRequestFocusEnabled(false);
 
-        spnSecTime8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime8.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime8.setToolTipText("00");
-        spnSecTime8.setRequestFocusEnabled(false);
+        spnFR100Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR100Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR100Secs.setToolTipText("00");
+        spnFR100Secs.setRequestFocusEnabled(false);
 
         lblColon12.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon12.setText(":");
 
-        spnMinTime9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime9.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime9.setToolTipText("00");
-        spnMinTime9.setRequestFocusEnabled(false);
+        spnIM100Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnIM100Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnIM100Mins.setToolTipText("00");
+        spnIM100Mins.setRequestFocusEnabled(false);
 
-        spnSecTime9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime9.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime9.setToolTipText("00");
-        spnSecTime9.setRequestFocusEnabled(false);
+        spIM100Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spIM100Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spIM100Secs.setToolTipText("00");
+        spIM100Secs.setRequestFocusEnabled(false);
 
         lblColon13.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon13.setText(":");
 
-        spnMinTime10.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime10.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime10.setToolTipText("00");
-        spnMinTime10.setRequestFocusEnabled(false);
+        spnFL200Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL200Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFL200Mins.setToolTipText("00");
+        spnFL200Mins.setRequestFocusEnabled(false);
 
-        spnSecTime10.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime10.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime10.setToolTipText("00");
-        spnSecTime10.setRequestFocusEnabled(false);
+        spnFL200Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFL200Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFL200Secs.setToolTipText("00");
+        spnFL200Secs.setRequestFocusEnabled(false);
 
         lblColon14.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon14.setText(":");
 
-        spnMinTime11.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime11.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime11.setToolTipText("00");
-        spnMinTime11.setRequestFocusEnabled(false);
+        spnBK200Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK200Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBK200Mins.setToolTipText("00");
+        spnBK200Mins.setRequestFocusEnabled(false);
 
-        spnSecTime11.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime11.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime11.setToolTipText("00");
-        spnSecTime11.setRequestFocusEnabled(false);
+        spnBK200Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBK200Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBK200Secs.setToolTipText("00");
+        spnBK200Secs.setRequestFocusEnabled(false);
 
         lblColon15.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon15.setText(":");
 
-        spnMinTime12.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime12.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime12.setToolTipText("00");
-        spnMinTime12.setRequestFocusEnabled(false);
+        spnBR200Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR200Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnBR200Mins.setToolTipText("00");
+        spnBR200Mins.setRequestFocusEnabled(false);
 
-        spnSecTime12.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime12.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime12.setToolTipText("00");
-        spnSecTime12.setRequestFocusEnabled(false);
+        spnBR200Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnBR200Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnBR200Secs.setToolTipText("00");
+        spnBR200Secs.setRequestFocusEnabled(false);
 
         lblColon16.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon16.setText(":");
 
-        spnMinTime13.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime13.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime13.setToolTipText("00");
-        spnMinTime13.setRequestFocusEnabled(false);
+        spnFR200Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR200Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR200Mins.setToolTipText("00");
+        spnFR200Mins.setRequestFocusEnabled(false);
 
-        spnSecTime13.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime13.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime13.setToolTipText("00");
-        spnSecTime13.setRequestFocusEnabled(false);
+        spnFR200Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR200Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR200Secs.setToolTipText("00");
+        spnFR200Secs.setRequestFocusEnabled(false);
 
         lblColon17.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon17.setText(":");
 
-        spnMinTime14.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime14.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime14.setToolTipText("00");
-        spnMinTime14.setRequestFocusEnabled(false);
+        spnIM200Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnIM200Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnIM200Mins.setToolTipText("00");
+        spnIM200Mins.setRequestFocusEnabled(false);
 
-        spnSecTime14.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime14.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime14.setToolTipText("00");
-        spnSecTime14.setRequestFocusEnabled(false);
+        spnIM200Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnIM200Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnIM200Secs.setToolTipText("00");
+        spnIM200Secs.setRequestFocusEnabled(false);
 
         lblColon18.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon18.setText(":");
 
-        spnSecTime15.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime15.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime15.setToolTipText("00");
-        spnSecTime15.setRequestFocusEnabled(false);
+        spnFR400Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR400Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR400Secs.setToolTipText("00");
+        spnFR400Secs.setRequestFocusEnabled(false);
 
-        spnMinTime15.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime15.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime15.setToolTipText("00");
-        spnMinTime15.setRequestFocusEnabled(false);
+        spnFR400Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR400Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR400Mins.setToolTipText("00");
+        spnFR400Mins.setRequestFocusEnabled(false);
 
         lblColon19.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon19.setText(":");
 
-        spnSecTime16.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime16.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime16.setToolTipText("00");
-        spnSecTime16.setRequestFocusEnabled(false);
+        spnIM400Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnIM400Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnIM400Secs.setToolTipText("00");
+        spnIM400Secs.setRequestFocusEnabled(false);
 
-        spnMinTime16.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime16.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime16.setToolTipText("00");
-        spnMinTime16.setRequestFocusEnabled(false);
+        spnIM400Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnIM400Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnIM400Mins.setToolTipText("00");
+        spnIM400Mins.setRequestFocusEnabled(false);
 
         lblColon20.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon20.setText(":");
 
-        spnSecTime17.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime17.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime17.setToolTipText("00");
-        spnSecTime17.setRequestFocusEnabled(false);
+        spnFR800Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR800Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR800Secs.setToolTipText("00");
+        spnFR800Secs.setRequestFocusEnabled(false);
 
-        spnMinTime17.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime17.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime17.setToolTipText("00");
-        spnMinTime17.setRequestFocusEnabled(false);
+        spnFR800Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR800Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR800Mins.setToolTipText("00");
+        spnFR800Mins.setRequestFocusEnabled(false);
 
-        spnMinTime18.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnMinTime18.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
-        spnMinTime18.setToolTipText("00");
-        spnMinTime18.setRequestFocusEnabled(false);
+        spnFR1000Mins.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR1000Mins.setModel(new javax.swing.SpinnerNumberModel(0, 0, 60, 1));
+        spnFR1000Mins.setToolTipText("00");
+        spnFR1000Mins.setRequestFocusEnabled(false);
 
-        spnSecTime18.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        spnSecTime18.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
-        spnSecTime18.setToolTipText("00");
-        spnSecTime18.setRequestFocusEnabled(false);
+        spnFR1000Secs.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        spnFR1000Secs.setModel(new javax.swing.SpinnerNumberModel(0, 0, 59, 1));
+        spnFR1000Secs.setToolTipText("00");
+        spnFR1000Secs.setRequestFocusEnabled(false);
 
         lblColon21.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblColon21.setText(":");
@@ -407,87 +419,52 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                     .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lbl100IM)
-                                .addComponent(lbl100Free)
-                                .addComponent(lbl100Breast)
-                                .addComponent(lbl100Back)
-                                .addComponent(lbl100Fly)
                                 .addComponent(lbl50Free)
                                 .addComponent(lblNamePB4)
                                 .addComponent(lbl50Back)
                                 .addComponent(lbl50Fly)
                                 .addComponent(lbl200Fly)
                                 .addComponent(lblNamePB10))
-                            .addGap(18, 18, 18)
+                            .addGap(117, 117, 117)
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime11, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnBK200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon14)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime11, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spnBK200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime10, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnFL200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon13)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime10, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spnFL200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(lbl200BackLayout.createSequentialGroup()
-                                            .addComponent(spnMinTime1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(spnFL50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(lblColon4)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(spnSecTime1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(spnFL50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(lbl200BackLayout.createSequentialGroup()
-                                            .addComponent(spnMinTime2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(spnBK50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(lblColon5)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(spnSecTime2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(spnBK50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                            .addComponent(spnMinTime3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(spnBR50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(lblColon6)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(spnSecTime3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(spnBR50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(spnFR50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(lblColon7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblColon8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime6, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblColon9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime6, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime7, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblColon10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime7, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblColon11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
-                                        .addComponent(spnMinTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblColon12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(spnSecTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(spnFR50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGroup(lbl200BackLayout.createSequentialGroup()
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(lbl200Breast)
@@ -495,17 +472,17 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime13, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnFR200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon16)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime13, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spnFR200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime12, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnBR200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon15)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime12, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(spnBR200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(lbl200BackLayout.createSequentialGroup()
                         .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lbl200IM)
@@ -513,26 +490,26 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                         .addGap(18, 18, 18)
                         .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(lbl200BackLayout.createSequentialGroup()
-                                .addComponent(spnMinTime15, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(spnFR400Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblColon18)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(spnSecTime15, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(spnFR400Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(lbl200BackLayout.createSequentialGroup()
-                                .addComponent(spnMinTime14, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(spnIM200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblColon17)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(spnSecTime14, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(spnIM200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
                             .addComponent(lbl400IM)
                             .addGap(18, 18, 18)
-                            .addComponent(spnMinTime16, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spnIM400Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(lblColon19)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(spnSecTime16, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(spnIM400Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(lbl200BackLayout.createSequentialGroup()
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(lbl800Free)
@@ -540,17 +517,56 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime18, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnFR1000Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon21)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime18, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spnFR1000Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(lbl200BackLayout.createSequentialGroup()
-                                    .addComponent(spnMinTime17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnFR800Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(lblColon20)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(spnSecTime17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(spnFR800Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(lbl200BackLayout.createSequentialGroup()
+                        .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl100IM)
+                            .addComponent(lbl100Free)
+                            .addComponent(lbl100Breast)
+                            .addComponent(lbl100Back)
+                            .addComponent(lbl100Fly))
+                        .addGap(18, 18, 18)
+                        .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
+                                .addComponent(spnFL100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblColon8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spnFL100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
+                                .addComponent(spnBK100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblColon9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spnBK100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
+                                .addComponent(spnBR100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblColon10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spnBR100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
+                                .addComponent(spnFR100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblColon11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spnFR100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, lbl200BackLayout.createSequentialGroup()
+                                .addComponent(spnIM100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblColon12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(spIM100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(670, Short.MAX_VALUE))
         );
         lbl200BackLayout.setVerticalGroup(
@@ -560,112 +576,114 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl50Fly, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon4)
-                    .addComponent(spnMinTime1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFL50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFL50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl50Back, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon5)
-                    .addComponent(spnMinTime2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBK50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBK50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNamePB4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon6)
-                    .addComponent(spnMinTime3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBR50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBR50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl50Free, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon7)
-                    .addComponent(spnMinTime4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(spnFR50Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR50Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl100Fly, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon8)
-                    .addComponent(spnMinTime5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFL100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFL100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl100Back, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon9)
-                    .addComponent(spnMinTime6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBK100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBK100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl100Breast, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon10)
-                    .addComponent(spnMinTime7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBR100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBR100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl100Free, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon11)
-                    .addComponent(spnMinTime8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFR100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl100IM, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon12)
-                    .addComponent(spnMinTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70)
+                    .addComponent(spnIM100Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spIM100Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl200Fly, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon13)
-                    .addComponent(spnMinTime10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFL200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFL200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNamePB10, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon14)
-                    .addComponent(spnMinTime11, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime11, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBK200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBK200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl200Breast, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon15)
-                    .addComponent(spnMinTime12, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime12, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnBR200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnBR200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl200Free, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon16)
-                    .addComponent(spnMinTime13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFR200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl200IM, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon17)
-                    .addComponent(spnMinTime14, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime14, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnIM200Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnIM200Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl400Free, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon18)
-                    .addComponent(spnMinTime15, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime15, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFR400Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR400Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl400IM, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblColon19)
-                    .addComponent(spnMinTime16, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime16, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnIM400Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnIM400Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(53, 53, 53)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl800Free)
                     .addComponent(lblColon20)
-                    .addComponent(spnMinTime17, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime17, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(spnFR800Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR800Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(lbl200BackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblColon21)
-                    .addComponent(spnMinTime18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spnSecTime18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR1000Mins, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnFR1000Secs, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl1000Free, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
+
+        spnFL50Mins.getAccessibleContext().setAccessibleName("");
 
         jScrollPane1.setViewportView(lbl200Back);
 
@@ -680,6 +698,11 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
         lblProfile.setText("Profile");
 
         btnDonePB.setText("DONE");
+        btnDonePB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDonePBActionPerformed(evt);
+            }
+        });
 
         lblNamePB.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblNamePB.setText("Name:");
@@ -700,46 +723,44 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
                 .addGap(50, 50, 50)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1077, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(123, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblPersonalBests, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 890, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(23, 23, 23)
-                                    .addComponent(lblNamePB)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtfldName, javax.swing.GroupLayout.PREFERRED_SIZE, 861, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(lblProfile))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnSavePB, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDonePB, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))))
-                    .addContainerGap()))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(254, 254, 254)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 459, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnSavePB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDonePB, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnDonePB, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblPersonalBests, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(23, 23, 23)
+                            .addComponent(lblNamePB)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtfldName, javax.swing.GroupLayout.PREFERRED_SIZE, 861, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblProfile))
+                    .addContainerGap(231, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnSavePB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnDonePB, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(103, 103, 103)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 459, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnSavePB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblNamePB, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtfldName, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(14, 14, 14)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblNamePB, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtfldName, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(21, 21, 21)
                     .addComponent(lblPersonalBests, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(481, Short.MAX_VALUE)))
         );
@@ -754,6 +775,10 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
     private void txtfldNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfldNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtfldNameActionPerformed
+
+    private void btnDonePBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDonePBActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnDonePBActionPerformed
 
     /**
      * @param args the command line arguments
@@ -841,42 +866,42 @@ public class ESGuiPersonalInfo extends javax.swing.JDialog {
     private javax.swing.JLabel lblNamePB4;
     private javax.swing.JLabel lblPersonalBests;
     private javax.swing.JLabel lblProfile;
-    private javax.swing.JSpinner spnMinTime1;
-    private javax.swing.JSpinner spnMinTime10;
-    private javax.swing.JSpinner spnMinTime11;
-    private javax.swing.JSpinner spnMinTime12;
-    private javax.swing.JSpinner spnMinTime13;
-    private javax.swing.JSpinner spnMinTime14;
-    private javax.swing.JSpinner spnMinTime15;
-    private javax.swing.JSpinner spnMinTime16;
-    private javax.swing.JSpinner spnMinTime17;
-    private javax.swing.JSpinner spnMinTime18;
-    private javax.swing.JSpinner spnMinTime2;
-    private javax.swing.JSpinner spnMinTime3;
-    private javax.swing.JSpinner spnMinTime4;
-    private javax.swing.JSpinner spnMinTime5;
-    private javax.swing.JSpinner spnMinTime6;
-    private javax.swing.JSpinner spnMinTime7;
-    private javax.swing.JSpinner spnMinTime8;
-    private javax.swing.JSpinner spnMinTime9;
-    private javax.swing.JSpinner spnSecTime1;
-    private javax.swing.JSpinner spnSecTime10;
-    private javax.swing.JSpinner spnSecTime11;
-    private javax.swing.JSpinner spnSecTime12;
-    private javax.swing.JSpinner spnSecTime13;
-    private javax.swing.JSpinner spnSecTime14;
-    private javax.swing.JSpinner spnSecTime15;
-    private javax.swing.JSpinner spnSecTime16;
-    private javax.swing.JSpinner spnSecTime17;
-    private javax.swing.JSpinner spnSecTime18;
-    private javax.swing.JSpinner spnSecTime2;
-    private javax.swing.JSpinner spnSecTime3;
-    private javax.swing.JSpinner spnSecTime4;
-    private javax.swing.JSpinner spnSecTime5;
-    private javax.swing.JSpinner spnSecTime6;
-    private javax.swing.JSpinner spnSecTime7;
-    private javax.swing.JSpinner spnSecTime8;
-    private javax.swing.JSpinner spnSecTime9;
+    private javax.swing.JSpinner spIM100Secs;
+    private javax.swing.JSpinner spnBK100Mins;
+    private javax.swing.JSpinner spnBK100Secs;
+    private javax.swing.JSpinner spnBK200Mins;
+    private javax.swing.JSpinner spnBK200Secs;
+    private javax.swing.JSpinner spnBK50Mins;
+    private javax.swing.JSpinner spnBK50Secs;
+    private javax.swing.JSpinner spnBR100Mins;
+    private javax.swing.JSpinner spnBR100Secs;
+    private javax.swing.JSpinner spnBR200Mins;
+    private javax.swing.JSpinner spnBR200Secs;
+    private javax.swing.JSpinner spnBR50Mins;
+    private javax.swing.JSpinner spnBR50Secs;
+    private javax.swing.JSpinner spnFL100Mins;
+    private javax.swing.JSpinner spnFL100Secs;
+    private javax.swing.JSpinner spnFL200Mins;
+    private javax.swing.JSpinner spnFL200Secs;
+    private javax.swing.JSpinner spnFL50Mins;
+    private javax.swing.JSpinner spnFL50Secs;
+    private javax.swing.JSpinner spnFR1000Mins;
+    private javax.swing.JSpinner spnFR1000Secs;
+    private javax.swing.JSpinner spnFR100Mins;
+    private javax.swing.JSpinner spnFR100Secs;
+    private javax.swing.JSpinner spnFR200Mins;
+    private javax.swing.JSpinner spnFR200Secs;
+    private javax.swing.JSpinner spnFR400Mins;
+    private javax.swing.JSpinner spnFR400Secs;
+    private javax.swing.JSpinner spnFR50Mins;
+    private javax.swing.JSpinner spnFR50Secs;
+    private javax.swing.JSpinner spnFR800Mins;
+    private javax.swing.JSpinner spnFR800Secs;
+    private javax.swing.JSpinner spnIM100Mins;
+    private javax.swing.JSpinner spnIM200Mins;
+    private javax.swing.JSpinner spnIM200Secs;
+    private javax.swing.JSpinner spnIM400Mins;
+    private javax.swing.JSpinner spnIM400Secs;
     private javax.swing.JTextField txtfldName;
     // End of variables declaration//GEN-END:variables
 }
