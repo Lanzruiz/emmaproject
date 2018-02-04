@@ -246,12 +246,21 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPauseActionPerformed
-//        Object[] options = {"Continue", "Quit workout"};
-//        int n = JOptionPane.showOptionDialog(frame,//parent container of JOptionPane
-//                "Menu","Paused", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,
-//                null, //do not use a custom Icon
-//                options, //the titles of buttons
-//                options[2]); //default button title
+        String[] buttons = {"Continue", "Quit workout"};
+        //Give options to be pressed
+        int rc = JOptionPane.showOptionDialog(null, "Paused", "Menu", JOptionPane.PLAIN_MESSAGE, 0, null, buttons, buttons[0]);
+        //Display the message with a message name, header, and buttons to be pressed
+       
+        if (rc == 1) {
+            int p = JOptionPane.showConfirmDialog(null, "Are you sure you want to quit this workout in session?", "Quit", JOptionPane.YES_NO_CANCEL_OPTION);
+           //If user decides to quit workout, make sure that they for sure want to
+            if (p == 0) {
+                this.dispose();
+                //Close the workout dialogue too
+            } else {
+                //Does nothing and closes the pop-up. 
+            }
+        }
     }//GEN-LAST:event_btnPauseActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

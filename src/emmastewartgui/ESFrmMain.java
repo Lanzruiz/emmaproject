@@ -245,11 +245,15 @@ public class ESFrmMain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        String clicked = lstWorkouts.getSelectedValue();
+    int p = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete this workout?", "Delete", JOptionPane.YES_NO_CANCEL_OPTION );
+      if(p==0){
+         String clicked = lstWorkouts.getSelectedValue();
         String id = manager.selectItem("Workout", "workoutID", "workoutName", clicked);
         manager.deleteItem("Workout", "workoutName", "workoutID", clicked, id);
         manager.deleteItem("Sets", "workoutID", id);
-        JOptionPane.showMessageDialog(null, "Workout deleted!");
+        JOptionPane.showMessageDialog(null, "Workout deleted!"); 
+      }  
+    
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void lstWorkoutsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lstWorkoutsMouseClicked

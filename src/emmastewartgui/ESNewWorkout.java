@@ -1,4 +1,3 @@
-
 package emmastewartgui;
 
 import java.sql.PreparedStatement;
@@ -6,7 +5,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet; 
+import java.sql.ResultSet;
 
 /**
  *
@@ -50,8 +49,8 @@ public class ESNewWorkout extends javax.swing.JDialog {
     public String calcTotalTime() {
 
         int totalSeconds = (((((int) spnMinTime1.getValue() * 60) + (int) spnSecTime1.getValue()) * (int) spnNumberofLaps1.getValue())
-                + ((((int) spnMinTime2.getValue() * 60) + (int) spnSecTime2.getValue()) * (int) spnNumberofLaps2.getValue()) +
-                ((((int) spnMinTime03.getValue() * 60) + (int) spnSecTime03.getValue()) * (int) spnNumberofLaps03.getValue())
+                + ((((int) spnMinTime2.getValue() * 60) + (int) spnSecTime2.getValue()) * (int) spnNumberofLaps2.getValue())
+                + ((((int) spnMinTime03.getValue() * 60) + (int) spnSecTime03.getValue()) * (int) spnNumberofLaps03.getValue())
                 + ((((int) spnMinTime4.getValue() * 60) + (int) spnSecTime4.getValue()) * (int) spnNumberofLaps4.getValue())
                 + ((((int) spnMinTime5.getValue() * 60) + (int) spnSecTime5.getValue()) * (int) spnNumberofLaps5.getValue())
                 + ((((int) spnMinTime6.getValue() * 60) + (int) spnSecTime6.getValue()) * (int) spnNumberofLaps6.getValue())
@@ -59,7 +58,7 @@ public class ESNewWorkout extends javax.swing.JDialog {
                 + ((((int) spnMinTime8.getValue() * 60) + (int) spnSecTime8.getValue()) * (int) spnNumberofLaps8.getValue())
                 + ((((int) spnMinTime9.getValue() * 60) + (int) spnSecTime9.getValue()) * (int) spnNumberofLaps9.getValue())
                 + ((((int) spnMinTime10.getValue() * 60) + (int) spnSecTime10.getValue()) * (int) spnNumberofLaps10.getValue()));
-        
+
         int hours = totalSeconds / 3600; // forward slash than back slash, not taking hours?? Dunno why. 
         int secAfterHours = totalSeconds % 3600;
         int minutes = secAfterHours / 60;
@@ -1185,7 +1184,7 @@ public class ESNewWorkout extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-    
+
         int id;
 
         try {
@@ -1324,7 +1323,7 @@ public class ESNewWorkout extends javax.swing.JDialog {
             ps10.setString(8, spnSecTime10.getValue().toString());
             ps10.setString(9, txtfldDescription10.getText());
             ps10.executeUpdate();
-            
+
             st.close();
             ps1.close();
             ps2.close();
