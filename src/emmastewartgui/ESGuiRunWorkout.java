@@ -48,6 +48,7 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
         // Then print the description:
         lblSetDescription.setText(setDetails.setDescription);
         
+        
 /*      int numOfLaps = setDetails.numOfLaps;
         while (workoutID = workoutDetails.workoutID){
                 run();
@@ -114,6 +115,7 @@ public class ESGuiRunWorkout extends javax.swing.JDialog {
 
     public void countdownToWorkout() {
         //I want to run this code before the actual workout starts
+        //Make a new dialogue? 
         int seconds = 10;
         while (seconds >= 0) {
             if (seconds < 10) {
