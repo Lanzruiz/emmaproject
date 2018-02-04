@@ -176,18 +176,11 @@ public class ESFrmMain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
-//        String clicked = lstWorkouts.getSelectedValue();
+        String clicked = lstWorkouts.getSelectedValue();
 //        String id = manager.selectItem("Workout", "workoutID", "workoutName", clicked);
-        ESEditWorkout dlg = new ESEditWorkout(this, true, lstWorkouts.getSelectedValue(),
-                manager.selectItem("Sets", "numOfLaps", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "strokeType", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "setDis", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "isPB", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "setDescription", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "setTimeMins", "workoutID", lstWorkouts.getSelectedValue()),
-                manager.selectItem("Sets", "setTimeSecs", "workoutID", lstWorkouts.getSelectedValue()));
-
-        //BACKEND.selectItem(TABLENAME, COLUMNWHERETHINGIS, COLUMNFORFILTERING, WHATYOUARELOOKINGFORINCOLUMNFORFILTERINGSOTHATITFILTERS)
+        System.out.println(clicked);
+        
+        ESEditWorkout dlg = new ESEditWorkout(this, true, clicked);
         dlg.setVisible(true);
         //projectList.getSelectedValue(), storyboard.selectItem("Projects", "Type", "Title", projectList.getSelectedValue()), storyboard.selectItem("Projects", "Summary", "Title", projectList.getSelectedValue()));
     }//GEN-LAST:event_btnEditActionPerformed

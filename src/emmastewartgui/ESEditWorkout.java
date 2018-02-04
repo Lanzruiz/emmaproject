@@ -2,7 +2,6 @@ package emmastewartgui;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,10 +11,74 @@ public class ESEditWorkout extends javax.swing.JDialog {
 
     EmmaStewartGUI manager;
     ESFrmMain ESFrmMain;
+    String Clicked;
 
-    public ESEditWorkout(java.awt.Frame parent, boolean modal) {
+    public ESEditWorkout(java.awt.Frame parent, boolean modal, String clickedvalue) {
         super(parent, modal);
         initComponents();
+        Clicked = clickedvalue;
+        Integer Id;
+        Integer setID;
+        Integer laps;
+        Integer dist;
+        String stroke;
+        String pb;
+        Integer minute;
+        Integer seconds;
+        String description;
+        
+        EmmaStewartGUI main = new EmmaStewartGUI();
+        System.out.println("Id to be sent" +main.getId(Clicked));
+        Id = main.getId(Clicked);
+        System.out.println("Id to be lapse" +main.getsetId(Id));
+        setID = main.getsetId(Id);
+        System.out.println("Lapse" + main.getLapse(setID));
+        
+        
+        //set1    
+        
+        laps = main.getLapse(setID);
+        dist = main.getDist(setID);
+        stroke = main.getStroke(setID);
+        pb = main.getPB(setID);
+        minute = main.getMinute(setID);
+        seconds = main.getSeconds(setID);
+        description = main.getDescription(setID);
+     
+        
+        txtfldWorkoutName.setText(clickedvalue);
+        spnNumberofLaps2.setValue(new Integer(laps));
+        spnDis2.setValue(new Integer(dist));
+        cmbxStroke2.setSelectedItem(stroke);
+        cmbxTime2.setSelectedItem(pb);
+        spnMinTime2.setValue(minute);
+        spnSecTime2.setValue(seconds);
+        txtfldDescription2.setText(description);
+        
+        // Set2
+        int ID_next = setID+1;
+        
+        laps = main.getLapse(ID_next);
+        dist = main.getDist(ID_next);
+        stroke = main.getStroke(ID_next);
+        pb = main.getPB(ID_next);
+        minute = main.getMinute(ID_next);
+        seconds = main.getSeconds(ID_next);
+        description = main.getDescription(ID_next);
+        
+        spnNumberofLaps03.setValue(new Integer(laps));
+        spnDis03.setValue(new Integer(dist));
+        cmbxStroke03.setSelectedItem(stroke);
+        cmbxTime03.setSelectedItem(pb);
+        spnMinTime03.setValue(minute);
+        spnSecTime03.setValue(seconds);
+        txtfldDescription03.setText(description);
+        
+        
+        System.out.println(ID_next);
+        
+        
+        System.out.println("Title for Edit Workout: " +Clicked);
     }
 
     public ESEditWorkout(java.awt.Frame parent, boolean modal, String workoutName, String numOfLaps, String strokeType, String setDis, String isPB, String setDescription, String setTimeMins, String setTimeSecs) {
@@ -1164,29 +1227,39 @@ public class ESEditWorkout extends javax.swing.JDialog {
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
 
-        try {
-            String value1 = txtfldWorkoutName.getText();
-            int value2 = (int) spnNumberofLaps2.getValue();
-            String value3 = (String) cmbxStroke2.getSelectedItem().toString();
-            int value4 = (int) spnDis2.getValue();
-            String value5 = cmbxTime2.getSelectedItem().toString();
-            String value6 = (String) spnMinTime2.getValue();
-            String value7 = (String) spnSecTime2.getValue();
-            String value8 = txtfldDescription2.getText();
-
-            String sql = "update Sets set workoutName = '" + value1 + "', numOfLaps = '"
-                    + value2 + "', strokeType = '" + value3 + "', setDis = '" + value4 + "',"
-                    + " isPB = '" + value5 + "', setTime = '" + value6 + "', setDescription = '"
-                    + value7 + "' where workoutName = '" + value1 + "'" + "' where setTimeMins = '"
-                    + value6 + "'" + "' where setTimeSecs = '" + value7 + "'";
-            PreparedStatement pst = new EmmaStewartGUI().connect().prepareStatement(sql);
-            pst.executeUpdate();
-            pst.close();
-            manager.connect().close();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Workout updated!");
-        }
+        System.out.println("Update:" +Clicked);
+        EmmaStewartGUI mainClass = new EmmaStewartGUI();
+        System.out.println(mainClass.getId(Clicked));
+        System.out.println("Id to the workout to update: " +mainClass.getId(Clicked));
+        
+        Integer laps = Integer.parseInt(spnNumberofLaps2.getValue().toString());
+        Integer dis = Integer.parseInt(spnDis2.getValue().toString());
+        Integer setId = mainClass.getsetId(mainClass.getId(Clicked));
+        String stroke = (String)cmbxStroke2.getSelectedItem();
+        String pb = (String)cmbxTime2.getSelectedItem();
+        Integer minutes = Integer.parseInt(spnMinTime2.getValue().toString());
+        Integer seconds = Integer.parseInt(spnSecTime2.getValue().toString());
+        String description = (String)txtfldDescription2.getText();
+        
+        System.out.println("This is pb:" +pb);
+        
+        mainClass.updateItem(txtfldWorkoutName.getText(), mainClass.getId(Clicked), laps, dis, stroke, pb, minutes, seconds, description, setId);
+        
+        //Set 2
+        
+        laps = Integer.parseInt(spnNumberofLaps03.getValue().toString());
+        dis = Integer.parseInt(spnDis03.getValue().toString());
+        setId = mainClass.getsetId(mainClass.getId(Clicked));
+        stroke = (String)cmbxStroke03.getSelectedItem();
+        pb = (String)cmbxTime03.getSelectedItem();
+        minutes = Integer.parseInt(spnMinTime03.getValue().toString());
+        seconds = Integer.parseInt(spnSecTime03.getValue().toString());
+        description = (String)txtfldDescription03.getText();
+        
+        System.out.println("This is pb:" +pb);
+        
+        mainClass.updateItem(txtfldWorkoutName.getText(), mainClass.getId(Clicked), laps, dis, stroke, pb, minutes, seconds, description, setId+1);
+        
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void txtfldWorkoutNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfldWorkoutNameActionPerformed
@@ -1209,52 +1282,7 @@ public class ESEditWorkout extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtfldDescription03ActionPerformed
 
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ESEditWorkout.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ESEditWorkout.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ESEditWorkout.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ESEditWorkout.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                ESEditWorkout dialog = new ESEditWorkout(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancel;
